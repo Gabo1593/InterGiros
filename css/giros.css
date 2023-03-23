@@ -1,0 +1,289 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.cotizar{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgb(255 166 0 / 94%);
+  border: 1px red solid;
+  color: white;
+  height: 50%;
+  width: 60%;
+  bottom: 25%;
+  left: 20%;
+  z-index: 1;
+}
+.cotizar input{
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: end;
+  width: 97%;
+}
+
+.cotizar .imagen{
+  align-self: self-start;
+  display: flex;
+}
+.cotizar .cotizar--envias{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color:  black;
+
+}
+.cotizar .cotizar--resives{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color:  black;
+
+}
+.cotizar img{
+  position: absolute;
+  top: -5%;
+  left: -50px;
+}
+main {
+    max-width: 100%;
+    margin: 0;
+ 
+  }
+header{
+    display: relative;
+    position: flex;
+    background: black;
+    height: 250px;
+}
+header img {
+    width: 150px;
+    height: 150px;
+    align-self: center;}
+
+   nav{
+    display: flex;
+    background: black;
+    justify-content: center; 
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+     li{
+      float: left;
+      margin: 5px;
+      justify-content: center;
+      list-style: none;
+      border-radius: 15px;
+      padding: 3px;
+      text-decoration: none;
+      background: gray;
+    }
+
+    .moneda{
+      width: 100%;
+      min-height: 30px;
+      background: orange;
+      color: black;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 3px;
+      font-weight: bolder;
+    }
+
+  .info{
+    color: aliceblue;
+    text-align: center;
+    align-self: center;
+  }
+
+ h1{
+    padding-top: 20px;
+
+  }
+  
+  .cop{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    min-height: 300px;
+    margin: 5px;
+  }
+  .cop:hover > :not(:hover
+  ){
+      opacity: 0.4;
+      transition: 0.5s;
+  }
+  .cop div{
+    display: flex;
+    flex-direction: column;
+    height: 206px;
+    width: 165px;
+    text-align: center;
+  }
+  .cop img{
+    border-radius: 15px;
+  }
+ 
+  .dolares{
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    
+  }
+  .dolares:hover > :not(:hover
+  ){
+      opacity: 0.4;
+      transition: 0.5s;
+  }
+  .titulo-d{
+    
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-align: center;
+    color: black;
+    background: orange;
+
+  }
+  .dolares-d{
+    display: grid;
+    justify-content: end;
+    padding-top: 18px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+    border-radius: 30px;
+    padding-bottom: 10px;
+    
+  }
+ img{
+   width: 165px;
+   height: 100px;
+   border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+  .dolares-d p{
+    margin-top: 20px;
+    border-radius: 25px;
+  }
+  .dolares--tasas{
+    display: flex;
+  }
+  .paypal{
+    background: white;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius:25px ;
+    height: 100px;
+    width: 100px;
+  }
+  .criptos{
+    text-align: center;
+    background: orange;
+    color: black;
+    font-weight: bolder;
+    min-height: 35px;
+    font-size: 1.4rem;
+    align-items: center;
+    padding-top: 5px;
+  }
+  .slider{
+  display: flex;
+  position: relative;
+  background:gray;
+  justify-content: center;
+  }
+  .slider-c{
+    min-width: 280px;
+    max-width: 300px;
+    min-height: 150px;
+    max-height: 190px;
+    border: solid black 2px;
+    position: relative;
+    margin: 20px;
+    background: rgba(39, 36, 39, 0.525);
+    border-radius: 30px;
+    color: aliceblue;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(62, 1, 5, 0.938);
+  }
+  .slider-c p{
+    margin-top: 80px;
+    font-size: 1.2rem;
+    padding-left: 30px;
+  }
+  .slider-c image{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    align-items: center;
+  }
+
+
+  footer{
+    display: flex;
+    height: 72px;
+    background: rgba(41, 39, 39, 0.789);
+    color: gainsboro;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+  }
+  footer p{
+    margin-left: 20px;
+  }
+
+footer img{
+  width: 50px;
+  height: 50px;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin-left: 30px;
+
+}
+
+
+
+@media (max-width:500px ){
+  .cotizar{
+    width: 80%;
+    left: 10%;  
+ }
+ .cotizar img{
+  position: absolute;
+  top: -5%;
+  left: -34px;
+  width: 100px;
+  height: 54px;
+}
+ 
+
+ .cop{
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+
+ }
+  .slider{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    background:gray;
+    justify-content: flex-start;
+  }
+    .slider-c{
+      position: relative;
+      scroll-snap-align: center;
+     
+    }
+    li{
+      font-size: 15px;
+    }
+}
